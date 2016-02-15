@@ -9,44 +9,46 @@
     <link rel="stylesheet" href="site.css"/>
 </head>
 <body>
-    <header style="">
-        <img src="img/logo.gif" alt="logo" />
-        <div>This is a site to search Github for interesting projects.</div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <p>
-            In this <em>sample site</em>, we'll show a list of <a href="github.com">Github</a> projects
-            and the data about <strong>those projects</strong>.
-        </p>
+    <div class="container">
+        <header style="">
+            <img src="img/logo.gif" alt="logo" class="image-border" />
+            <div>This is a site to search Github for interesting projects.</div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            <p>
+                In this <em>sample site</em>, we'll show a list of <a href="github.com">Github</a> projects
+                and the data about <strong>those projects</strong>.
+            </p>
 
-        <form>
-            <label for="searchPhrase">Search Phrase:</label>
-            <input type="text" name="searchPhrase" id="searchPhrase" /><br />
-            <input type="checkbox" id="useStars" name="useStars" checked="checked" />
-            <label for="useStars">Use Stars?</label>
-            <br />
-            <label for="langChoice">Language:</label>
-            <select id="langChoice" name="langChoice">
-                <option>All</option>
-                <option>JavaScript</option>
-                <option>HTML</option>
-                <option selected>C#</option>
-                <option>Java</option>
-                <option>Ruby</option>
-            </select>
-            <br />
-            <input type="submit" value="Search" />
-        </form>
-    </section>
-    <footer>
-        &copy; Creschendo Ltd
-    </footer>
+            <form class="image-border simple-form">
+                <label for="searchPhrase">Search Phrase:</label>
+                <input type="text" name="searchPhrase" id="searchPhrase" /><br />
+                <input type="checkbox" id="useStars" name="useStars" checked="checked" />
+                <label for="useStars">Use Stars?</label>
+                <br />
+                <label for="langChoice">Language:</label>
+                <select id="langChoice" name="langChoice">
+                    <option>All</option>
+                    <option>JavaScript</option>
+                    <option>HTML</option>
+                    <option selected>C#</option>
+                    <option>Java</option>
+                    <option>Ruby</option>
+                </select>
+                <br />
+                <input type="submit" value="Search" />
+            </form>
+        </section>
+        <footer>
+            &copy; Crescendo Ltd
+        </footer>
+    </div>
 </body>
 </html>
